@@ -1,9 +1,9 @@
 [package]
-name = "rust-cli-app"
+name = "ethmsg"
 version = "0.1.0"
 authors = ["Yuichiro Aoki"]
-description = "Rust CLI App"
-repository = "https://github.com/yuichiroaoki/rust-cli-app"
+description = "Messaging on chain"
+repository = "https://github.com/yuichiroaoki/ethmsg"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -11,5 +11,5 @@ edition = "2021"
 [dependencies]
 clap = { version = "4.0.7", features = ["derive"] }
 dotenv = "0.15.0"
-reqwest = { version="0.11.10", features = ["blocking", "json"] }
+ethers = { git = "https://github.com/gakonst/ethers-rs" }
 tokio = { version =  "1.21.2", features = ["rt-multi-thread", "macros"] }
