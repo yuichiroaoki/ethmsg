@@ -36,8 +36,7 @@ async fn main() {
     match args.command {
         Commands::Decode { tx_hash } => {
             let tx_hash = receive::tx_hash_str_to_h256(&tx_hash).unwrap();
-            let message = receive::get_tx_input(tx_hash).await;
-            println!("{}", message);
+            receive::get_tx_input(tx_hash).await;
         }
         Commands::Env { key } => {
             let val = utils::get_env(&key);
