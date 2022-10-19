@@ -43,7 +43,6 @@ async fn main() {
             println!("{} = {}", key, val);
         }
         Commands::Send { msg, to, value } => {
-            println!("to: {}, value: {}", to, value);
             send::send_msg(msg, to, value).await.unwrap();
         }
     }
