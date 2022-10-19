@@ -1,6 +1,6 @@
-# Rust Cli App Template
+# Ethmsg
 
-Template for building Rust CLI applications
+Messaging on chain
 
 ## Usage
 
