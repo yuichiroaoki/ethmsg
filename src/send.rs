@@ -16,7 +16,7 @@ pub async fn send_msg(
     let value = parse_ether(value)?;
     let wallet: LocalWallet = get_env("PRIVATE_KEY").parse()?;
     println!("from: {:?}", wallet.address());
-    println!("to: {:?}", to); 
+    println!("to: {:?}", to);
     println!("message: {}", msg);
     let tx_request = TransactionRequest {
         from: Some(wallet.address()),
